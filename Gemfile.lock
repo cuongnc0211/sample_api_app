@@ -107,6 +107,7 @@ GEM
     nokogiri (1.12.3)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
+    pagy (3.13.0)
     pg (1.2.3)
     pry (0.14.1)
       coderay (~> 1.1)
@@ -214,6 +215,7 @@ DEPENDENCIES
   faker
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  pagy
   pg (~> 1.1)
   pry
   puma (~> 5.0)
