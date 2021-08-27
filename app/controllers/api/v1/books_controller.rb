@@ -4,7 +4,8 @@ module Api
 
     # GET api/v1/books
     def index
-      @pagy, @books = pagy(Book.all)
+      @q = Book.ransack(title_or_author_or_publisher_or_genre_cont: params[:q])
+      @pagy, @books = pagy(@q.result)
 
       render json: {
         books: @books,
